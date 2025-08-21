@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLUMINE - IT 서비스 전문기업</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .blue-gradient {
+            background: linear-gradient(45deg, #3b82f6, #1e40af);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <span class="text-3xl font-bold text-blue-600">BLUE</span>
+                    <span class="text-3xl font-bold text-gray-800">MINE</span>
+                    <span class="ml-2 text-sm text-gray-500 font-medium">.IT</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium">서비스</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium">회사소개</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium">연락처</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                IT 서비스 전문기업
+                <span class="block text-4xl md:text-5xl mt-2">BLUMINE</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-200">
+                기업의 디지털 혁신을 위한 종합 IT 솔루션을 제공합니다
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 text-lg">
+                <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">IT 인프라 구축</span>
+                <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">클라우드 서비스</span>
+                <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">NAS 솔루션</span>
+                <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full">화상회의 시스템</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">주요 서비스</h2>
+                <p class="text-xl text-gray-600">기업의 다양한 IT 요구사항을 해결하는 전문 솔루션</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- IT 서비스 -->
+                <div class="service-card bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-xl border border-blue-200">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-500 text-white p-3 rounded-lg mr-4">
+                            <i class="fas fa-desktop text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">IT 서비스</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-500 mr-3"></i>
+                            컴퓨터, 노트북, PC 설치 및 유지보수
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-500 mr-3"></i>
+                            네트워크 및 IT 인프라 구축
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-500 mr-3"></i>
+                            소프트웨어 설치 및 IT 기술지원
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 클라우드 서비스 -->
+                <div class="service-card bg-gradient-to-br from-green-50 to-emerald-100 p-8 rounded-xl border border-green-200">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-green-500 text-white p-3 rounded-lg mr-4">
+                            <i class="fas fa-cloud text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">클라우드 서비스</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Microsoft Office 365 구축 및 관리
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Microsoft Azure 클라우드 구축
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Google G Suite 구축 및 관리
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- NAS 구축 -->
+                <div class="service-card bg-gradient-to-br from-purple-50 to-violet-100 p-8 rounded-xl border border-purple-200">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-purple-500 text-white p-3 rounded-lg mr-4">
+                            <i class="fas fa-server text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">NAS 구축</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-500 mr-3"></i>
+                            Synology, QNAP NAS 시스템 구축
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-500 mr-3"></i>
+                            데이터 백업 및 복구 솔루션
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-500 mr-3"></i>
+                            원격 접속 및 동기화 서비스 (Sync, VPN)
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 화상회의 솔루션 -->
+                <div class="service-card bg-gradient-to-br from-orange-50 to-red-100 p-8 rounded-xl border border-orange-200">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-orange-500 text-white p-3 rounded-lg mr-4">
+                            <i class="fas fa-video text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">화상회의 솔루션</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-orange-500 mr-3"></i>
+                            Zoom, Microsoft Teams, Cisco Webex 구축
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-orange-500 mr-3"></i>
+                            화상회의 장비 설치 (Webcam, Bluetooth Speaker)
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-orange-500 mr-3"></i>
+                            Adobe Connect 시스템 구축
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">회사 소개</h2>
+                    <p class="text-lg text-gray-700 mb-6">
+                        BLUMINE은 기업의 디지털 혁신을 이끄는 IT 서비스 전문기업입니다. 
+                        다년간의 경험과 전문성을 바탕으로 고객 맞춤형 IT 솔루션을 제공하고 있습니다.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-8">
+                        IT 인프라 구축부터 클라우드 서비스, NAS 솔루션, 화상회의 시스템까지 
+                        기업이 필요로 하는 모든 IT 서비스를 원스톱으로 제공합니다.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="text-center">
+                            <div class="blue-gradient text-white p-4 rounded-lg mb-2">
+                                <i class="fas fa-users text-2xl"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-900">전문 인력</h4>
+                            <p class="text-gray-600">숙련된 IT 전문가</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="blue-gradient text-white p-4 rounded-lg mb-2">
+                                <i class="fas fa-clock text-2xl"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-900">신속한 지원</h4>
+                            <p class="text-gray-600">빠른 문제 해결</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blue-gradient text-white p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-6">핵심 가치</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-star mr-3"></i>
+                            <span>고객 중심의 맞춤형 서비스</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-shield-alt mr-3"></i>
+                            <span>안정적이고 보안성 높은 솔루션</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-rocket mr-3"></i>
+                            <span>최신 기술 트렌드 적용</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-handshake mr-3"></i>
+                            <span>지속적인 파트너십 구축</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">연락처</h2>
+                <p class="text-xl text-gray-600">IT 솔루션이 필요하시다면 언제든 문의해주세요</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-8 bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl">
+                    <div class="bg-blue-500 text-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">이메일</h3>
+                    <p class="text-gray-600">info@blumine.kr</p>
+                </div>
+
+                <div class="text-center p-8 bg-gradient-to-br from-green-50 to-emerald-100 rounded-xl">
+                    <div class="bg-green-500 text-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <i class="fas fa-phone text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">전화</h3>
+                    <p class="text-gray-600">02-522-3815</p>
+                </div>
+
+                <div class="text-center p-8 bg-gradient-to-br from-purple-50 to-violet-100 rounded-xl">
+                    <div class="bg-purple-500 text-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <i class="fas fa-globe text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">웹사이트</h3>
+                    <p class="text-gray-600">www.blumine.kr</p>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <div class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">무료 상담 신청</h3>
+                    <p class="text-blue-100">기업의 IT 환경 진단 및 맞춤형 솔루션 제안</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <span class="text-2xl font-bold text-blue-400">BLUE</span>
+                        <span class="text-2xl font-bold text-white">MINE</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        기업의 디지털 혁신을 위한<br>
+                        종합 IT 솔루션 제공
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">주요 서비스</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>IT 인프라 구축</li>
+                        <li>클라우드 서비스</li>
+                        <li>NAS 솔루션</li>
+                        <li>화상회의 시스템</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">연락처</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-envelope mr-2"></i>info@blumine.kr</p>
+                        <p><i class="fas fa-phone mr-2"></i>02-522-3815</p>
+                        <p><i class="fas fa-globe mr-2"></i>www.blumine.kr</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>819, 13, Seolleung-ro 89-gil, Gangnam-gu, Seoul, Korea, 06212 </p>
+                <p>Copyright&copy; BLUMINE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDohKOV7Y2vbUupqMF7uZApZZy8pusG8y2tK0Un9THvyagypAGoj4w3CJhlQcqZYPLCcp4Dv7q3E1idp00JqIRJfB922IU9jQAJIuqTlmGUKUCJ%2FwFTSgeCGbUZd%2BMTihXj8PZ8USG10NuPrzXos%2BD0nlnhULPlVGxZz8lUag1hgZ53HoBktIfcm25H31ZYlO6DAh9dG6ELxgmPnJfiiMM%2BxSPNmREI342EeSlIp8o4LwmzwrnrX5rtY1jHqAGaeUMRaR4aTk4VzF1hxH7JS6ddduqu78n%2BV4%2FnMphURin79UHGu8J%2FbjaMf6if0tU4BEV9tzXFS%2FqDsXT5l2oPvWxi6lWoAIxeN9XjyIiUPFP81WT4amLPu9aL66WqWhQSt1xhT5l1Fv6Uzb2B4utqoOqK29Up7YOLj7D3Z17aYHDO%2BY9XMgT6byENPdNdRs6bfW2%2FUnz9Hm2xKJZfX9TLN89i1R23TqYS4HiqkjrExIaBtx8BZRzOrFaPMdSqXsyqyZAg%3D%3D";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDohKOV7Y2vbUupqMF7uZApZZy8pusG8y2tK0Un9THvyagypAGoj4w3CJhlQcqZYPLCcp4Dv7q3E1idp00JqIRJfB922IU9jQAJIuqTlmGUKUCJ/wFTSgeCGbUZd+MTihXj8PZ8USG10NuPrzXos+D0nlnhULPlVGxZz8lUag1hgZ53HoBktIfcm25H31ZYlO6DAh9dG6ELxgmPnJfiiMM+xSPNmREI342EeSlIp8o4LwmzwrnrX5rtY1jHqAGaeUMRaR4aTk4VzF1hxH7JS6ddduqu78n+V4/nMphURin79UHGu8J/bjaMf6if0tU4BEV9tzXFS/qDsXT5l2oPvWxi6lWoAIxeN9XjyIiUPFP81WT4amLPu9aL66WqWhQSt1xhT5l1Fv6Uzb2B4utqoOqK29Up7YOLj7D3Z17aYHDO+Y9XMgT6byENPdNdRs6bfW2/Unz9Hm2xKJZfX9TLN89i1R23TqYS4HiqkjrExIaBtx8BZRzOrFaPMdSqXsyqyZAg==";
+    </script>
+    
+        <script id="html_badge_script2" src="https://www.genspark.ai/html_badge.js"></script>
+        
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
